@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #DE8A89;
+    
+}
+
+.container {
+    padding-top: 160px;
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.header {
+    padding-top: 40px;
+    height: 200px;
+    position: absolute;
+    right: -10px;  
+    top: 0; 
+    
+}
+
+
+.navbar {
+    margin-bottom: 20px;
+
+}
+
+.navbar>ul {
+    display: flex;
+    grid-gap: 50px;
+}
+
+.navbar-item {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    opacity: 50%;
+    transition-duration: .4s;
+    cursor: pointer;
+}
+
+.navbar-item.active {
+    opacity: 1;
+}
+
+.navbar-item:hover {
+    opacity: 1;
+}
+.text {
+    color: white;
+}
+
+.main-area {
+    height: calc(100vh - 220px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-area {
+    display: flex;
+    justify-content: center;
+    background-color: yellow;
+    position: relative;
+}
+
+.box {
+    background-color: #201E1F;
+    width: 290px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.first {
+    background-color: #3E3C3D;
+    position: relative;
+}
+
+.second {
+    background-color: #353334;
+}
+
+.subtitle {
+    color: #C78E8C;
+    font-size: 23px;
+}
+
+.title {
+    color: white;
+    font-size: 29px;
+    font-weight: bold;
+}
+
+.ears {
+    background-color: white;
+    opacity: 50%; 
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.ears:hover {
+    opacity: 80%;
+}
+
+.left {
+    left: -90px;
+}
+
+.right {
+    position: absolute;
+    right: -90px;
+}
+
+.btn {
+    color: white;
+    background-color: black;
+    border:none;
+    border-radius: 3px;
+    width: 250px;
+    height: 50px;
+    position: absolute;
+    bottom: -25px;
+    left: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: .5s;
+}
+
+.btn:hover {
+    transform: translateY(5px) ;
+}
